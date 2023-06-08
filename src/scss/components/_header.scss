@@ -1,0 +1,29 @@
+.header {
+  width: 100%;
+  padding: 20px;
+  @include flex(center, space-between);
+
+  img {
+    max-width: 170px;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+
+    @include darkMode {
+      background-color: $primary-color;
+    }
+  }
+
+  button {
+    padding: 20px;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: $second-color;
+
+    @include darkMode {
+      color: $primary-color;
+    }
+  }
+}

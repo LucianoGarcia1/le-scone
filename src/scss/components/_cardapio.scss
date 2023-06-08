@@ -1,0 +1,82 @@
+.cardapio {
+  width: 100%;
+  padding: 20px;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .inline-cardapio {
+    width: 100%;
+    gap: 5rem;
+    @include flex(center, center);
+    @include device(m) {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .card {
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+      background-color: $second-color;
+      border-radius: 5px;
+      padding: 20px;
+
+      @include device(m) {
+        max-width: 100%;
+      }
+
+      @include darkMode {
+        background-color: $primary-color;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        color: $primary-color;
+        margin-bottom: 1rem;
+
+        @include darkMode {
+          color: $second-color;
+        }
+      }
+
+      ul {
+        list-style: none;
+
+        li {
+          color: $primary-color;
+          font-size: 1rem;
+
+          @include darkMode {
+            color: $second-color;
+          }
+
+          .price {
+            color: $yellow-second;
+            font-weight: 500;
+
+            @include darkMode {
+              color: $blue-primary;
+            }
+          }
+        }
+      }
+
+      ion-icon {
+        font-size: 4rem;
+        color: $primary-color;
+
+        @include darkMode {
+          color: $second-color;
+        }
+
+        @include device(s) {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}

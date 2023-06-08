@@ -1,0 +1,141 @@
+.contato {
+  width: 100%;
+  padding: 20px;
+  @include flex(center, flex-start);
+  flex-direction: column;
+
+  h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    max-width: 400px;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    color: $second-color;
+
+    @include darkMode {
+      color: $primary-color;
+    }
+  }
+
+  .inline-info {
+    width: 100%;
+    @include flex(flex-start, space-between);
+    gap: 1rem;
+
+    @include device(m) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    form {
+      width: 50%;
+      text-align: center;
+      @include flex(center, center);
+      flex-direction: column;
+      gap: 1rem;
+
+      @include device(m) {
+        width: 100%;
+      }
+
+      label {
+        max-width: 500px;
+        width: 100%;
+        font-size: 1.2rem;
+        @include flex(flex-start, flex-start);
+        flex-direction: column;
+        gap: 0.5rem;
+        color: $second-color;
+
+        @include darkMode {
+          color: $primary-color;
+        }
+
+        input,
+        textarea {
+          width: 100%;
+          padding: 1rem;
+          border-radius: 5px;
+          background-color: $second-color;
+          border: 2px solid transparent;
+          color: $primary-color;
+          transition: all 0.5s;
+          outline: none;
+          font-size: 0.9rem;
+
+          &:hover,
+          &:focus {
+            border-color: $yellow-second;
+          }
+
+          @include darkMode {
+            background-color: $primary-color;
+            color: $second-color;
+
+            &:hover,
+            &:focus {
+              border-color: $blue-primary;
+            }
+          }
+        }
+
+        textarea {
+          height: 130px;
+          resize: none;
+        }
+      }
+    }
+
+    button {
+      max-width: 500px;
+      width: 100%;
+      padding: 1rem;
+      background-color: $yellow-second;
+      border-radius: 5px;
+      border: 2px solid transparent;
+      font-size: 1.2rem;
+      color: $second-color;
+      cursor: pointer;
+
+      @include darkMode {
+        background-color: $blue-primary;
+        color: $primary-color;
+      }
+    }
+  }
+
+  .map {
+    width: 50%;
+
+    img {
+      max-width: 100%;
+      border: 10px solid $second-color;
+      transition: all 0.25s;
+      object-fit: cover;
+      padding: 0.8rem;
+      border-radius: 5px;
+      overflow: hidden;
+
+      @include darkMode {
+        border-color: $primary-color;
+      }
+
+      &:hover {
+        padding: 0.5rem;
+        transform: scale(1.1);
+        margin-right: 1rem;
+      }
+    }
+    @include device(m) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

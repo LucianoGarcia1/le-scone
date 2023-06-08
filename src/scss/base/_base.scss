@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Mono", monospace;
+}
+
+body,
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $primary-color;
+
+  @include darkMode {
+    background-color: $second-color;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Aref Ruqaa", serif;
+  font-weight: 700;
+  color: $second-color;
+
+  @include darkMode {
+    color: $primary-color;
+  }
+}

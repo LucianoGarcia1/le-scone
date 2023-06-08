@@ -1,0 +1,28 @@
+@mixin device($size) {
+  @if $size == l {
+    @media screen and (max-width: $l-device) {
+      @content;
+    }
+  } @else if $size == m {
+    @media screen and (max-width: $m-device) {
+      @content;
+    }
+  } @else if $size == s {
+    @media screen and (max-width: $s-device) {
+      @content;
+    }
+  }
+}
+
+@mixin flex($align, $content) {
+  display: flex;
+  align-items: $align;
+  justify-content: $content;
+}
+
+@mixin darkMode {
+  body.dark & {
+    @content;
+    transition: all 0.25s;
+  }
+}

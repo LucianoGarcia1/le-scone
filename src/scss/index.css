@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Mono", monospace;
+}
+
+body,
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #edece4;
+}
+body.dark body,
+body.dark .container {
+  background-color: #2a2426;
+  transition: all 0.25s;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Aref Ruqaa", serif;
+  font-weight: 700;
+  color: #2a2426;
+}
+body.dark h1,
+body.dark h2,
+body.dark h3 {
+  color: #edece4;
+  transition: all 0.25s;
+}
+
+.header {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header img {
+  max-width: 170px;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+}
+body.dark .header img {
+  background-color: #edece4;
+  transition: all 0.25s;
+}
+.header button {
+  padding: 20px;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #2a2426;
+}
+body.dark .header button {
+  color: #edece4;
+  transition: all 0.25s;
+}
+
+.main {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+@media screen and (max-width: 760px) {
+  .main {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+.main .details {
+  width: 60%;
+}
+@media screen and (max-width: 760px) {
+  .main .details {
+    width: 100%;
+  }
+}
+.main .details h1 {
+  max-width: 600px;
+  width: 100%;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 760px) {
+  .main .details h1 {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main .details h1 {
+    font-size: 2.5rem;
+  }
+}
+.main .details p {
+  font-size: 1rem;
+  color: #2a2426;
+}
+body.dark .main .details p {
+  color: #edece4;
+  transition: all 0.25s;
+}
+.main .img-restaurant {
+  text-align: right;
+  width: 40%;
+}
+@media screen and (max-width: 760px) {
+  .main .img-restaurant {
+    width: 100%;
+  }
+}
+.main .img-restaurant img {
+  max-width: 350px;
+  width: 100%;
+  border: 10px solid #2a2426;
+  transition: all 0.25s;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0.8rem;
+  border-radius: 5px;
+  overflow: hidden;
+}
+body.dark .main .img-restaurant img {
+  border-color: #edece4;
+  transition: all 0.25s;
+}
+.main .img-restaurant img:hover {
+  padding: 0.5rem;
+  transform: scale(1.1);
+  margin-right: 1rem;
+}
+
+.cardapio {
+  width: 100%;
+  padding: 20px;
+}
+.cardapio h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.cardapio .inline-cardapio {
+  width: 100%;
+  gap: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 760px) {
+  .cardapio .inline-cardapio {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+.cardapio .inline-cardapio .card {
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  background-color: #2a2426;
+  border-radius: 5px;
+  padding: 20px;
+}
+@media screen and (max-width: 760px) {
+  .cardapio .inline-cardapio .card {
+    max-width: 100%;
+  }
+}
+body.dark .cardapio .inline-cardapio .card {
+  background-color: #edece4;
+  transition: all 0.25s;
+}
+.cardapio .inline-cardapio .card h3 {
+  font-size: 1.5rem;
+  color: #edece4;
+  margin-bottom: 1rem;
+}
+body.dark .cardapio .inline-cardapio .card h3 {
+  color: #2a2426;
+  transition: all 0.25s;
+}
+.cardapio .inline-cardapio .card ul {
+  list-style: none;
+}
+.cardapio .inline-cardapio .card ul li {
+  color: #edece4;
+  font-size: 1rem;
+}
+body.dark .cardapio .inline-cardapio .card ul li {
+  color: #2a2426;
+  transition: all 0.25s;
+}
+.cardapio .inline-cardapio .card ul li .price {
+  color: #F5F218;
+  font-weight: 500;
+}
+body.dark .cardapio .inline-cardapio .card ul li .price {
+  color: #0A92F0;
+  transition: all 0.25s;
+}
+.cardapio .inline-cardapio .card ion-icon {
+  font-size: 4rem;
+  color: #edece4;
+}
+body.dark .cardapio .inline-cardapio .card ion-icon {
+  color: #2a2426;
+  transition: all 0.25s;
+}
+@media screen and (max-width: 480px) {
+  .cardapio .inline-cardapio .card ion-icon {
+    font-size: 3rem;
+  }
+}
+
+.contato {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.contato h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.contato p {
+  max-width: 400px;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: #2a2426;
+}
+body.dark .contato p {
+  color: #edece4;
+  transition: all 0.25s;
+}
+.contato .inline-info {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+@media screen and (max-width: 760px) {
+  .contato .inline-info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+.contato .inline-info form {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media screen and (max-width: 760px) {
+  .contato .inline-info form {
+    width: 100%;
+  }
+}
+.contato .inline-info form label {
+  max-width: 500px;
+  width: 100%;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #2a2426;
+}
+body.dark .contato .inline-info form label {
+  color: #edece4;
+  transition: all 0.25s;
+}
+.contato .inline-info form label input,
+.contato .inline-info form label textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #2a2426;
+  border: 2px solid transparent;
+  color: #edece4;
+  transition: all 0.5s;
+  outline: none;
+  font-size: 0.9rem;
+}
+.contato .inline-info form label input:hover, .contato .inline-info form label input:focus,
+.contato .inline-info form label textarea:hover,
+.contato .inline-info form label textarea:focus {
+  border-color: #F5F218;
+}
+body.dark .contato .inline-info form label input,
+body.dark .contato .inline-info form label textarea {
+  background-color: #edece4;
+  color: #2a2426;
+  transition: all 0.25s;
+}
+body.dark .contato .inline-info form label input:hover, body.dark .contato .inline-info form label input:focus,
+body.dark .contato .inline-info form label textarea:hover,
+body.dark .contato .inline-info form label textarea:focus {
+  border-color: #0A92F0;
+}
+.contato .inline-info form label textarea {
+  height: 130px;
+  resize: none;
+}
+.contato .inline-info button {
+  max-width: 500px;
+  width: 100%;
+  padding: 1rem;
+  background-color: #F5F218;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  font-size: 1.2rem;
+  color: #2a2426;
+  cursor: pointer;
+}
+body.dark .contato .inline-info button {
+  background-color: #0A92F0;
+  color: #edece4;
+  transition: all 0.25s;
+}
+.contato .map {
+  width: 50%;
+}
+.contato .map img {
+  max-width: 100%;
+  border: 10px solid #2a2426;
+  transition: all 0.25s;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0.8rem;
+  border-radius: 5px;
+  overflow: hidden;
+}
+body.dark .contato .map img {
+  border-color: #edece4;
+  transition: all 0.25s;
+}
+.contato .map img:hover {
+  padding: 0.5rem;
+  transform: scale(1.1);
+  margin-right: 1rem;
+}
+@media screen and (max-width: 760px) {
+  .contato .map {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.footer {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+@media screen and (max-width: 760px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}
+.footer span {
+  font-size: 1.2rem;
+  color: #2a2426;
+}
+body.dark .footer span {
+  color: #edece4;
+  transition: all 0.25s;
+}/*# sourceMappingURL=index.css.map */

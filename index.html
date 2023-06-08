@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Le Scone - Restaurante" />
+    <title>Le Scone</title>
+    <link rel="stylesheet" href="src/scss/index.css" />
+  </head>
+  <body class="dark">
+    <section class="container">
+      <header class="header">
+        <div class="logo">
+          <img src="assets/lescone.png" alt="Le Scone" />
+        </div>
+
+        <div class="themes">
+          <button title="temas">
+            <ion-icon name="moon-outline"></ion-icon>
+          </button>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="details">
+          <h1>Lescone: Sabores autênticos, experiência única.</h1>
+          <p>De Seg. Seg. das 07:00h às 18:00h <span class="hours"></span></p>
+
+          <p>Praia de Botafogo, 300</p>
+          <p>Rio de Janeiro - RJ</p>
+          <p>+55 021 2412-3333</p>
+        </div>
+        <div class="img-restaurant">
+          <img src="./assets/foto.png" alt="Restaurante" />
+        </div>
+      </main>
+
+      <section class="cardapio">
+        <h2>Menu Gastronômico</h2>
+        <div class="inline-cardapio">
+          <div class="card">
+            <ion-icon name="grid-outline"></ion-icon>
+            <h3>Sabores Autênticos</h3>
+            <ul class="list">
+              <li><span class="price">R$ 4,80</span> Ovos Mexidos</li>
+              <li><span class="price">R$ 7,80</span> Scones de Frutas</li>
+              <li><span class="price">R$ 4,80</span> Joelho de Queijo</li>
+              <li><span class="price">R$ 3,00</span> Presunto Cozido</li>
+              <li><span class="price">R$ 5,00</span> Coxinha de Frango</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <ion-icon name="restaurant-outline"></ion-icon>
+            <h3>Sabores Exclusivos</h3>
+            <ul class="list">
+              <li><span class="price">R$ 10,80</span> Penne com Queijo</li>
+              <li><span class="price">R$ 20,50</span> Feijoada</li>
+              <li><span class="price">R$ 30,00</span> Costela ao Molho</li>
+              <li><span class="price">R$ 20,80</span> Medalhão de Frango</li>
+              <li><span class="price">R$ 5,00</span> Coxinha de Frango</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="contato">
+        <h2>Entre Em Contato Conosco!</h2>
+
+        <p>
+          Para uma experiência gastronômica memorável. Ligue ou envie uma
+          mensagem para reservas e informações. Atendimento excepcional e sabor
+          inigualável esperam por você!
+        </p>
+
+        <div class="inline-info">
+          <form>
+            <label>
+              Nome
+              <input type="text" name="nome" required />
+            </label>
+
+            <label>
+              E-mail
+              <input type="email" name="email" required />
+            </label>
+
+            <label>
+              Telefone
+              <input type="tel" name="Telefone" required />
+            </label>
+
+            <label>
+              Mensagem
+              <textarea name="Mensagem" required></textarea>
+            </label>
+
+            <button>Enviar Mensagem</button>
+          </form>
+
+          <div class="map">
+            <img src="./assets/map.png" alt="mapa" />
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>Le Scone © 1989 - 2023. Alguns direitos reservados</span>
+
+        <img src="assets/lescone-icone.png" alt="Le scone" />
+      </footer>
+    </section>
+
+    <script type="module" src="src/js/index.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
